@@ -8,7 +8,7 @@ export const Values = () => {
         justifyContent="center"
         bgColor="white"
         gap="3%"
-        p="80px 10px 0 10px"
+        p="80px 20px 0"
       >
         <Box
           w={{ base: "100%", md: "30%" }}
@@ -24,7 +24,6 @@ export const Values = () => {
             <ListItem>Kwaliteit</ListItem>
             <ListItem>Loyaliteit</ListItem>
             <ListItem>Meedenkend</ListItem>
-            <ListItem>Ontzorgend</ListItem>
           </UnorderedList>
         </Box>
         <Box
@@ -38,9 +37,9 @@ export const Values = () => {
             Wanneer er in een hydraulisch systeem een probleem voordoet, zal
             Hans eerst vooronderzoek doen, er zal overleg plaatsvinden over het
             probleem. Wanneer het een kleine storing betreft zal er een snelle
-            oplossing mogelijk zijn. Wanneer de storing ingewikkelder ligt zal
-            er in samenspraak met het betreffende bedrijf een plan van aanpak
-            gemaakt worden, alles in zeer goed overleg.
+            oplossing mogelijk zijn. Wanneer de storing gecompliceerder ligt,
+            zal er in samenspraak met het betreffende bedrijf een plan van
+            aanpak worden voorgesteld, alles in goed overleg.
           </Text>
         </Box>
       </Box>

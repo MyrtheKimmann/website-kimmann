@@ -15,7 +15,7 @@ export const NavList = ({ display, onClose, padding }) => {
         </ListItem>
 
         <ListItem padding={padding} onClick={onClose}>
-          <NavLink to={`/Projecten`}>Projecten</NavLink>
+          <NavLink to={`/projecten`}>Projecten</NavLink>
         </ListItem>
 
         <ListItem padding={padding} onClick={onClose}>

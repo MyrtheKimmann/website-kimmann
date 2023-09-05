@@ -13,7 +13,7 @@ export const Contact = () => {
         justifyContent="center"
         bgColor="white"
         gap="3%"
-        p="150px 20px 0 20px"
+        p="150px 20px 0"
       >
         <Box>
           <Heading fontSize="1.7rem" pb="10px" color="#002d62">
@@ -21,7 +21,7 @@ export const Contact = () => {
           </Heading>
           <Seperator />
 
-          <Text color="gray" p="10px 0 10px 0" maxWidth="450px">
+          <Text color="gray" p="10px 0" maxWidth="450px">
             Bel voor hydraulische storingen. Voor andere vragen neem gerust
             hieronder contact op. We proberen zo snel mogelijk te reageren!
           </Text>

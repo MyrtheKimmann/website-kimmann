@@ -1,25 +1,13 @@
-import {
-  Drawer,
-  DrawerBody,
-  Flex,
-  Spacer,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  useDisclosure,
-  Image,
-  useMediaQuery,
-} from "@chakra-ui/react";
+import { Flex, Spacer, Image, useMediaQuery } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+// components
+import { NavDrawer } from "./NavDrawer";
 // ui
 import { NavList } from "../ui/NavList";
-// icons
-import { CgMenuRightAlt } from "react-icons/cg";
 // images
-import logo from "../../public/images/logo.png";
+import logo from "../images/logo.png";
 
 export const Header = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
   const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
 
   return (
@@ -46,33 +34,7 @@ export const Header = () => {
           <NavList display={"flex"} padding={"15px"} />
         ) : (
           <>
-            <CgMenuRightAlt className="menu-icon" onClick={onOpen} />
-
-            <Drawer
-              size="xs"
-              isOpen={isOpen}
-              placement="right"
-              onClose={onClose}
-            >
-              <DrawerOverlay />
-              <DrawerContent>
-                <DrawerCloseButton color="navy" />
-
-                <DrawerBody
-                  display="inline-block"
-                  p="50px 0 0 30px"
-                  bgColor="#F5F5F5"
-                  fontWeight="600"
-                  fontSize="18px"
-                >
-                  <NavList
-                    display={"initial"}
-                    onClose={onClose}
-                    padding={"15px"}
-                  />
-                </DrawerBody>
-              </DrawerContent>
-            </Drawer>
+            <NavDrawer />
           </>
         )}
       </Flex>

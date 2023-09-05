@@ -3,7 +3,6 @@ import { Box, Text } from "@chakra-ui/react";
 import { BsHouse } from "react-icons/bs";
 import { BsTelephone } from "react-icons/bs";
 import { VscMail } from "react-icons/vsc";
-import { HiOutlineClock } from "react-icons/hi";
 
 export const InfoBox = () => {
   return (
@@ -33,10 +32,6 @@ export const InfoBox = () => {
             Achterweg 1 <br />
             7874 TL Odoornerveen <br />
           </Text>
-        </Box>
-        <Box display="flex" gap="40px" alignItems="center" pb="30px">
-          <HiOutlineClock className="contact-icon" />
-          <Text>09:00 - 18:00</Text>
         </Box>
       </Box>
     </>

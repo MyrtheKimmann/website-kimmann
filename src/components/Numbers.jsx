@@ -1,4 +1,6 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+// ui
+import { Number } from "../ui/Number";
 
 export const Numbers = () => {
   return (
@@ -6,34 +8,15 @@ export const Numbers = () => {
       <Box
         bgColor="#002d62"
         color="white"
-        display="flex"
-        flexWrap="wrap"
-        flexDirection={{ base: "column", sm: "row" }}
-        gap="40px"
+        display={{ md: "flex" }}
+        gap="5%"
         justifyContent="center"
         textAlign="center"
-        p="40px 0 40px 0"
+        pt="20px"
       >
-        <Box>
-          <Text fontSize="2.0rem" fontWeight="700">
-            35+
-          </Text>
-          jaar ervaring
-        </Box>
-
-        <Box>
-          <Text fontSize="2.0rem" fontWeight="700">
-            8
-          </Text>
-          vaste klanten
-        </Box>
-
-        <Box>
-          <Text fontSize="2.0rem" fontWeight="700">
-            2.5K
-          </Text>
-          storingen verholpen
-        </Box>
+        <Number number={"35+"} text={"jaar ervaring"} />
+        <Number number={"100+"} text={"vaste klanten"} />
+        <Number number={"2.5K+"} text={"storingen verholpen"} />
       </Box>
     </>
   );

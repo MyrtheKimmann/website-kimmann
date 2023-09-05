@@ -1,19 +1,24 @@
-import klus from "../../public/images/v-aruba.jpg";
-import hijskraan from "../../public/images/hijskraan.jpg";
+import schotland from "../images/schotland.jpg";
+import l from "../images/l.jpg";
+import helm from "../images/helm.jpg";
 
 export const projects = [
   {
     id: 1,
-    number: "01",
-    title: "Klus Aruba",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique accusamus, voluptates, culpa ipsa quidem porro nostrum rerum voluptatibus quaerat odio explicabo hic illo ipsum.",
-    image: klus,
-  },
-  {
-    id: 2,
-    number: "02",
-    title: "Klus Engeland",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique accusamus, voluptates, culpa ipsa quidem porro nostrum rerum voluptatibus quaerat odio explicabo hic illo ipsum.",
-    image: hijskraan,
+    title: "Hydraulische kraan",
+    country: "Schotland",
+    date: "aug, 2023",
+    text: "Dit is een kraan die gebruikt wordt om goederen van het schip op het platform te hijsen en andersom. Doordat er altijd mensen in de buurt lopen, moet elke handeling soepel en betrouwbaar verlopen. De kraan was niet veilig en buiten werking gezet. Hans heeft ervoor gezorgd dat de kraan na aanpassing veilig gebruikt kan worden.",
+    image: schotland,
+    detailsImages: [
+      {
+        id: 1,
+        image: l,
+      },
+      {
+        id: 2,
+        image: helm,
+      },
+    ],
   },
 ];

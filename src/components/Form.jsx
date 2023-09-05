@@ -1,14 +1,22 @@
 import { Button, Input, Textarea } from "@chakra-ui/react";
 import "../index.css";
+import { useState, useEffect } from "react";
 // import ReCAPTCHA from "react-google-recaptcha";
 
 export const Form = () => {
-  // const onChange = () => {};
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    if (window.location.search.includes("success=true")) {
+      setSuccess(true);
+    }
+  }, []);
+
   return (
     <form
       name="contact"
       method="post"
-      action="/confirmation.html"
+      action="/form/?success=true"
       className="form"
     >
       <Input type="hidden" name="form-name" value="contact" />
@@ -37,6 +45,7 @@ export const Form = () => {
         mb="25px"
         required
       />
+      {success && <p style={{ color: "green" }}>Bedankt voor je bericht! </p>}
       {/* <ReCAPTCHA sitekey="Your client site key" onChange={onChange} /> */}
       <Button type="submit" bgColor="#002d62" color="white" fontWeight="normal">
         Verzenden
