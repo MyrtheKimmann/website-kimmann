@@ -10,6 +10,7 @@ import { ProjectDetails } from "./pages/ProjectDetails";
 import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
 import { Over } from "./pages/Over";
+import { NotFound } from "./pages/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

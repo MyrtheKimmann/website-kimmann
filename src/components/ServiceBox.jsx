@@ -38,7 +38,7 @@ export const ServiceBox = () => {
           icon={<MdArrowOutward className="service-icon" />}
           heading={"Optimaliseren"}
           text={
-            "Systemen die al wat langer draaien met verouderde technieken kunnen vaak vrij simpel worden aangepast waardoor een hoger rendement haalbaar is. De kosten voor de aanpassingen zijn vaak snel terugverdient."
+            "Systemen die al wat langer draaien met verouderde technieken kunnen vaak vrij simpel worden aangepast, waardoor een hoger rendement haalbaar is. De kosten voor de aanpassingen zijn vaak snel terugverdient."
           }
         />
 
