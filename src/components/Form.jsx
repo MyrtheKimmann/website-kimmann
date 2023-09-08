@@ -1,6 +1,7 @@
 import { Button, Input, Textarea } from "@chakra-ui/react";
 import "../index.css";
 import ReCAPTCHA from "react-google-recaptcha";
+import "../pages/Contact.jsx";
 
 export const Form = () => {
   function onChange(value) {
@@ -8,7 +9,12 @@ export const Form = () => {
   }
 
   return (
-    <form name="contact" method="post" className="form">
+    <form
+      name="contact"
+      method="post"
+      action="/confirmation.html"
+      className="form"
+    >
       <Input type="hidden" name="form-name" value="contact" />
       <Input
         type="text"
