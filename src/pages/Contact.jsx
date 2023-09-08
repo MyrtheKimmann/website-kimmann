@@ -22,8 +22,9 @@ export const Contact = () => {
           <Seperator />
 
           <Text color="gray" p="10px 0" maxWidth="450px">
-            Bel voor hydraulische storingen. Voor andere vragen neem gerust
-            hieronder contact op. We proberen zo snel mogelijk te reageren!
+            Bel voor het verhelpen van hydraulische storingen. Voor andere
+            vragen neem gerust hieronder contact op. We proberen zo snel
+            mogelijk te reageren!
           </Text>
           <Form />
         </Box>
